@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naveen's Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+
+
+        <div class="logo">
+          <span class="logo1">N</span>aveen
+        </div>
+
+
+        <div class="right">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><i class="fa-regular fa-moon" onclick="changebg()"></i></li>
+          </ul>
+          
+        </div>
+
+        
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Naveen</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icons" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu-links">
+            <li><a href="#home" onclick="togglemenu()">Home</a></li>
+            <li><a href="#aboutus" onclick="togglemenu()">About Us</a></li>
+            <li><a href="#Services" onclick="togglemenu()">Services</a></li>
+            <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+            <li><a href="#contactus" onclick="togglemenu()">Contact Us</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="section_pic">
+        <img
+          src="/assests/WhatsApp Image 2024-01-26 at 10.37.14 PM.jpeg"
+          id="profile_pic"
+          alt="profile pic"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Uyyala Naveen</h1>
+        <p class="section_p2">Full Stack developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assests/myresume.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href = '#contactus'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-icons">
+          <i
+            class="fa-brands fa-linkedin"
+            onclick="location.href ='https://www.linkedin.com/in/uyyalanaveen/'"
+          ></i>
+          <i
+            class="fa-brands fa-github"
+            onclick="location.href ='https:github.com/uyyalanaveen'"
+          ></i>
+        </div>
+        <!-- <i class="fa-solid fa-arrow-down fa-home" onclick="location.href = '#aboutus'"></i> -->
+      </div>
+    </section>
+
+    <section id="aboutus">
+      <div class="aboutme-detials">
+        <div class="section_pic1">
+          <img
+            src="./assests/WhatsApp Image 2024-01-26 at 10.37.14 PM.jpeg"
+            id="profile_pic" class="pic2" height="80%"
+          />
+        </div>
+
+        <div class="detials">
+
+          <div class="header-about">
+            <p class="section_text_p2 aboutme">Get To know more</p>
+            <h1 class="about-head">About Me</h1>
+          </div>
+
+
+          <div class="edu-details">
+
+            <div class="education">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h2>Education</h2>
+              <p class="edu-details">Bachelor of Technology(B.TECH)</p>
+            </div>
+
+            <div class="education edu1">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h2>Experience</h2>
+              <p class="edu-details">2 years+ in front-end dev</p>
+            </div>
+
+          </div>
+
+          <!-- <i class="fa-solid fa-arrow-down fa-contactus" onclick="location.href = '#Services'"></i> -->
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              voluptates provident voluptatem earum magnam alias nostrum amet
+              error nesciunt, porro dolorem vel assumenda placeat, libero
+              reiciendis minima illo neque nisi.
+            </p>
+          </div>
+          
+        </div>
+      </section>
+    </header>
+    <script src="./script.js"></script>
+      </div>
+    </section>
+
+    <section id="Services">
+      <p class="service_p">Currently we are not serving yet.</p>
+    </section>
+
+    <section id="projects">
+      <h1>Our Projects</h1>
+    </section>
+
+    <section id="contactus">
+      <h1>contact me</h1>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

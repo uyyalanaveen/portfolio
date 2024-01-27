@@ -1,0 +1,403 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3 ease;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+/* Top Navbar */
+#navbar
+{
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    /* background-color: rgba(19, 19, 92, 0.587); */
+    overflow: hidden;
+}
+nav,ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+   
+}
+.nav-links
+{
+    list-style: none;
+    gap: 2rem;
+}
+/* navbar-links */
+a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: 1.4rem;
+    
+}
+
+a:hover
+{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: gray;
+}
+
+/* Logo */
+.logo
+{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.logo:hover{
+    cursor: default;
+}
+.logo1
+{
+    color: rgb(236, 22, 93);
+}
+/* Transitions */
+a{
+    transition: all 300ms ease;
+}
+
+/* Hamburger-menu */
+
+#hamburger-nav
+{
+    display: none;
+}
+.hamburger-menu
+{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icons
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icons span
+{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3 ease-in-out;
+}
+.menu-links
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-links a
+{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open
+{
+    max-height: 300px;
+    background-color: transparent;
+}
+.hamburger-icons.open span:first-child
+{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icons.open span:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger-icons.open span:last-child
+{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-icons span:first-child
+{
+    opacity: 1;
+}
+.hamburger-icons span:first-child
+{
+    transform: none;
+}
+
+#profile_pic
+{
+    width: 400px;
+    height: 400px;
+    /* border: 2px dotted rgb(82, 202, 192); */
+    border-radius: 50%;
+}
+.fa-brands
+{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px
+}
+section
+{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section_pic
+{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+#home
+{
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section_text
+{
+    align-self: center;
+    align-items: center;
+}
+.section_text_p1
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.599);
+}
+.title
+{
+    font-size: 3rem;
+    text-align: center;
+}
+#social-icons
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    
+}
+.btn-container
+{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn
+{    
+    width: 44%;
+    height: 52px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 300ms ease;
+
+}
+.section_p2{
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.599);
+}
+.btn-color-1,
+.btn-color-2:hover
+{
+    background-color: white;
+    color: black;
+}
+.btn-color-1:hover{
+    background-color: transparent;
+    color: white ;
+}
+.education
+{
+    width: 15vw;
+    height: 15vh;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
+    float: left;
+    /* margin-left:20px; */
+
+}
+/*
+#aboutus
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.logo2
+{
+    position: relative;
+    display: block;
+    left: 0;
+    top: 10px;
+    
+}
+.fa-graduation-cap
+{
+    font-size: 25px;
+}
+*/
+
+
+.section_pic1
+{
+    flex: 1;
+    margin-top: 10%;
+    margin-left: 20%;
+    
+}
+.pic2
+{
+    margin-left: 10%;
+}
+.detials
+{
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    margin-top: 10%;
+}
+.aboutme-detials
+{
+    display: flex;
+}
+.text-container
+{
+    width: 80%;
+    height: 100%;
+    margin-top: 7%;
+    
+} 
+.text-container p
+{
+    font-size: 20px;
+    text-align: justify;
+
+}
+.about-head
+{
+    font-size: 56px;
+}
+.header-about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 10%;
+}
+.edu-details
+{
+    display: flex;
+    gap: 3px;
+    bottom: 20px;
+}
+.edu1
+{
+    margin-left: 30px;
+}
+.service_p
+{
+    font-size: 36px;
+}
+.fa-moon{
+    color: red;
+    font-size: 34px;
+}
+.fa-arrow-down
+{
+    font-size: 50px;
+    /* position: absolute;
+    top: 40%; */
+}
+.fa-home
+{
+    position: absolute;
+    left: 6%;
+    top: 80%;
+}
+/* .fa-contactus
+{
+    position: relative;
+    
+    top: 10%;
+    
+    
+} */
+#Services
+{
+    padding-top: 8%;
+}
+#projects
+{
+    padding-top: 8%;
+}
+#contactus
+{
+    padding-top: 8%;
+}
+#aboutus
+{
+    padding-top: 8%;
+}
