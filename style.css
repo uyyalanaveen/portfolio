@@ -67,6 +67,7 @@ a:hover
 }
 .logo:hover{
     cursor: default;
+    
 }
 .logo1
 {
@@ -88,7 +89,7 @@ a{
     position: relative;
     display: inline-block;
 }
-.hamburger-icons
+.hambBurger-icons
 {
     display: flex;
     justify-content: space-between;
@@ -168,6 +169,11 @@ main
     height: 400px;
     /* border: 2px dotted rgb(82, 202, 192); */
     border-radius: 50%;
+}
+.pic2
+{
+    margin-left: 47%;
+    
 }
 .fa-brands
 {
@@ -252,15 +258,25 @@ section
     text-align: center;
     color: rgba(255, 255, 255, 0.599);
 }
-.btn-color-1,
+
 .btn-color-2:hover
 {
     background-color: white;
     color: black;
+    box-shadow: 0 0 5px cyan,
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 50px cyan;
+    
 }
 .btn-color-1:hover{
-    background-color: transparent;
-    color: white ;
+    background-color: white;
+    color: rgb(0, 0, 0) ;
+    box-shadow: none;
+    box-shadow: 0 0 5px cyan,
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 50px cyan;
 }
 .education
 {
@@ -275,7 +291,6 @@ section
     line-height: 35px;
     float: left;
     /* margin-left:20px; */
-
 }
 /*
 #aboutus
@@ -305,14 +320,12 @@ section
 .section_pic1
 {
     flex: 1;
-    margin-top: 10%;
-    margin-left: 20%;
-    
+    display: flex;
+    /* height: 400px;
+    width: 400px; */
+    margin: auto 0;
 }
-.pic2
-{
-    margin-left: 10%;
-}
+
 .detials
 {
     width: 100vw;
@@ -323,6 +336,10 @@ section
 .aboutme-detials
 {
     display: flex;
+    /* padding-top: 8%; */
+    justify-content: center;
+    gap: 7rem;
+    height: 80vh;
 }
 .text-container
 {
@@ -400,4 +417,6 @@ section
 #aboutus
 {
     padding-top: 8%;
+    
 }
+
